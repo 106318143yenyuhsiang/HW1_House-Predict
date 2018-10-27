@@ -2,8 +2,9 @@ HW1_House-Predict
 -----------
 # 工作環境
     1.Ubuntu
-    2.Python3.5
+    2.Python3.6
     3.Keras
+    4.Spyder
 # 引入函式庫
     import pandas as pd
     from keras.models import Sequential
