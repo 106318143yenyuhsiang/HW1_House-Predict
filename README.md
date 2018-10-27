@@ -35,5 +35,7 @@ HW1_House-Predict
     history = model.fit(features,prices, nb_epoch= 1000 , batch_size= 50 )
     output=model.predict(test_features)
     np.savetxt('test.csv',output,delimiter=',')
+# 執行過程
+![image](https://github.com/106318143yenyuhsiang/HW1_House-Predict/blob/master/r.JPG)
 # Kaggle排名
 ![image](https://github.com/106318143yenyuhsiang/HW1_House-Predict/blob/master/rank.JPG)
