@@ -1,6 +1,9 @@
------------
 HW1_House-Predict
 -----------
+# 工作環境
+    1.Ubuntu
+    2.Python3.5
+    3.Keras
 # 引入函式庫
     import pandas as pd
     from keras.models import Sequential
