@@ -36,4 +36,4 @@ HW1_House-Predict
     output=model.predict(test_features)
     np.savetxt('test.csv',output,delimiter=',')
 # Kaggle排名
-    ![image](https://github.com/106318143yenyuhsiang/HW1_House-Predict/blob/master/rank.JPG)
+![image](https://github.com/106318143yenyuhsiang/HW1_House-Predict/blob/master/rank.JPG)
