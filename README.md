@@ -32,10 +32,15 @@ HW1_House-Predict
     model.add(Dense(1, kernel_initializer='normal'))
     model.compile(loss='mean_absolute_error', optimizer='adam')
 # 測試模型
-    history = model.fit(features,prices, nb_epoch= 1000 , batch_size= 50 )
+    history = model.fit(features,prices, nb_epoch= 500 , batch_size= 50 )
     output=model.predict(test_features)
     np.savetxt('test.csv',output,delimiter=',')
 # 執行過程
 ![image](https://github.com/106318143yenyuhsiang/HW1_House-Predict/blob/master/run.JPG)
 # Kaggle排名
 ![image](https://github.com/106318143yenyuhsiang/HW1_House-Predict/blob/master/rank.JPG)
+# 分析
+    誤差在前幾次循環訓練中似乎就已收斂,再多次的訓練也只能調整微量的誤差
+# 檢討改進
+    1.標準化後的數據,數字過大的是否應該清除
+    2.模型應該使用幾層神經網路,還有一層要幾個神經元
